@@ -2,9 +2,7 @@ package pizza
 
 import factories.PizzaIngredientFactory
 
-class VeggiePizza(
-    private val ingredientFactory: PizzaIngredientFactory
-) : Pizza() {
+class VeggiePizza(private val ingredientFactory: PizzaIngredientFactory) : Pizza() {
 
     override fun prepare() {
         println("Preparing $name")
